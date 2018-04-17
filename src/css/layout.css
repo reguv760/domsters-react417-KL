@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 1em 10%;
+  margin: 1em auto;
   /* background-image: url(../images/background.gif); */
   background-attachment: fixed;
   background-position: top left;
@@ -20,25 +20,25 @@ body {
   border-style: solid;
   border-bottom-width: 0;
 }
+
 #navigation {
   /* background-image: url(../images/navbar.gif); */
   background-position: bottom left;
   background-repeat: repeat-x;
-  border-width: .1em;
-  border-style: solid;
-  border-bottom-width: 0;
-  border-top-width: 0;
-  padding-left: 10%;
+
 }
 #navigation ul {
+
+  display:flex;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
-  border-left-width: .1em;
-  border-left-style: solid;
 }
+
 #navigation li {
   display: inline;
 }
+
 #navigation li a {
   display: block;
   float: left;
