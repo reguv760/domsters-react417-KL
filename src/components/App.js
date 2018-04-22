@@ -1,27 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './../css/basic.css';
 import Header from './Header';
-import Navigation from './Navigation';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Live from './Live';
-import Photos from './Photos';
+import Navigation from './Navigation'
+import Content from './Content';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Navigation/>
-        <Home />
-        <About />
-        <Contact />
-        <Photos />
-        <Live />
-      </div>
-    );
-  }
+const App = () =>
+{
+  return (
+    <div>
+      <Header />
+      <Navigation/>
+      <Content/>
+    </div>
+  );
 }
 
 export default App;

@@ -1,14 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import NotFound from './NotFound';
+
+//setup multi-page website
+//Step 2: Load App (designed site) in <BrowserRouter>
 
 const Router = () => (
   <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={App} />
-      <Route component={NotFound} />
-    </Switch>
+    <App />
   </BrowserRouter>
 );
 export default Router;

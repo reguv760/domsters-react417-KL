@@ -1,15 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
+
+
+//setup multi-page website:::
+//step 4: define links for Router to listen to
 const Navigation = () =>
 {
   return (
     <div id="navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="photos.html">Photos</a></li>
-        <li><a href="live.html">Live</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/photos'>Photos</Link>
+        <Link to='/live'>Live</Link>
+        <Link to='/contact'>Contact</Link>
       </ul>
     </div>
   );

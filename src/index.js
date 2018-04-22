@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './App';
-import Router from './components/Router';
 import registerServiceWorker from './registerServiceWorker';
 
+//import App from './components/App';
+import Router from './components/Router';
+
+//setup multi-page website
+//Step 1: Create BrowserRouter.js <reference Content.js>
+//Render BrowserRouter.js in ReactDOM
 ReactDOM.render(<Router />, document.getElementById('root'));
 registerServiceWorker();
 
-//homework 4-24-18
-//codesandbox.io/s/vVoQVk78
+
