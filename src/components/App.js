@@ -4,6 +4,9 @@ import Header from './Header';
 import Navigation from './Navigation'
 import Content from './Content';
 
+//setup multi-page website
+//Step 2b: //load and call out Content.js
+
 const App = () =>
 {
   return (

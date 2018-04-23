@@ -9,11 +9,10 @@ import Live from './Live';
 import Photos from './Photos';
 import NotFound from './NotFound';
 
-
-
 //setup multi-page website:::
 //step 3:
-//define links as Routes
+//modularize "pages" + define links as Routes
+//then add in Navigation.js
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
