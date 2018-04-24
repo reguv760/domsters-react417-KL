@@ -21,30 +21,7 @@ body {
   border-bottom-width: 0;
 }
 
-#navigation {
-  /* background-image: url(../images/navbar.gif); */
-  background-position: bottom left;
-  background-repeat: repeat-x;
 
-}
-#navigation ul {
-
-  display:flex;
-  justify-content: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-#navigation li {
-  display: inline;
-}
-
-#navigation li a {
-  display: block;
-  float: left;
-  padding: .5em 2em;
-  border-right: .1em solid;
-}
 #content {
   border-width: .1em;
   border-style: solid;
