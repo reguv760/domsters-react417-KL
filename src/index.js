@@ -1,14 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
-//import App from './components/App';
-import Router from './components/Router';
+//import Router from './components/Router';
 
 //setup multi-page website (4 steps)
 //Step 1: Create Router component <reference Content.js>
 //Render Router component in ReactDOM
-ReactDOM.render(<Router />, document.getElementById('root'));
+render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));
+
 registerServiceWorker();
 
 

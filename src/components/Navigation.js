@@ -8,15 +8,15 @@ import { Link } from 'react-router-dom'
 const Navigation = () =>
 {
   return (
-    <div id="navigation">
+    <nav id="navigation">
       <ul>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/photos'>Photos</Link>
-        <Link to='/live'>Live</Link>
-        <Link to='/contact'>Contact</Link>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/photos'>Photos</Link></li>
+        <li><Link to='/live'>Live</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
       </ul>
-    </div>
+    </nav>
   );
 }
 export default Navigation;

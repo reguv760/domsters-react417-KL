@@ -8,14 +8,12 @@ import Content from './Content';
 //Step 2b: //load and call out Content.js
 
 const App = () =>
-{
-  return (
-    <div>
-      <Header />
-      <Navigation/>
-      <Content/>
-    </div>
-  );
-}
+(
+  <div>
+    <Header />
+    <Navigation/>
+    <Content/>
+  </div>
+);
 
 export default App;

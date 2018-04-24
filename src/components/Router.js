@@ -5,7 +5,8 @@ import App from './App';
 //setup multi-page website
 //Step 2a: Load App (designed site) in <BrowserRouter>
 
-const Router = () => (
+const Router = () =>
+(
   <BrowserRouter>
     <App />
   </BrowserRouter>

@@ -2,12 +2,12 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'; //import Switch + Route functions:::
 
 //import content
-import About from './About';
-import Contact from './Contact';
-import Home from './Home';
-import Live from './Live';
-import Photos from './Photos';
-import NotFound from './NotFound';
+import About from './../pages/About';
+import Contact from './../pages/Contact';
+import Home from './../pages/Home';
+import Live from './../pages/Live';
+import Photos from './../pages/Photos';
+import NotFound from './../pages/NotFound';
 
 //setup multi-page website:::
 //step 3:
@@ -21,17 +21,15 @@ import NotFound from './NotFound';
 // when the pathname is exactly the string "/"
 
 const Content = () =>
-{
-  return(
-    <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/about' component={About}/>
-      <Route path='/contact' component={Contact}/>
-      <Route path='/live' component={Live}/>
-      <Route path='/photos' component={Photos}/>
-      <Route component={NotFound} />
-    </Switch>
-  );
-}
+(
+  <Switch>
+    <Route exact path='/' component={Home}/>
+    <Route path='/about' component={About}/>
+    <Route path='/contact' component={Contact}/>
+    <Route path='/live' component={Live}/>
+    <Route path='/photos' component={Photos}/>
+    <Route component={NotFound} />
+  </Switch>
+);
 
 export default Content;
